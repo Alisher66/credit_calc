@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="calc">
+            <div class="sum__group">
+                <label for="sum">Сумма кредита</label>
+                <input type="text" id="sum">
+            </div>
+            <div class="month__group">
+                <label for="month">Срок кредита (месяц)</label>
+                <input type="text" id="month">
+            </div>
+            <div class="percent__group">
+                <label for="percent">Процентная ствака (в год)</label>
+                <input type="text" id="percent">
+            </div>
+            <div class="select__group">
+                <label for="select">Вид расчета</label>
+                <select id="select">
+                    <option value="1">Аннуитет</option>
+                    <option value="2">Обычный</option>
+                </select>
+            </div>
+            <button class="submit" type="submit">Рассчитать</button>
+        </div>
+
+        <div class="result__table">
+            <div class="item">
+                <p class="item_month" >Месяц</p>
+                <p class="item_payment" >Сумма выплаты</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
